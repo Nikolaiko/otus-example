@@ -13,10 +13,12 @@ class ViewController: UIViewController {
     @IBAction func onButtonShowClick() {
         if exampleFlag {
             actionButton.tintColor = UIColor.yellow
+            actionButton.setTitle("Уверены?!#@@#", for: .normal)
         } else {
             actionButton.tintColor = UIColor.red
+            actionButton.setTitle("Уверены?", for: .normal)
         }
-        actionButton.setTitle("Уверены?", for: .normal)
+
         actionButton.setTitle("Уверены?", for: .highlighted)
 
         actionButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(secondClick)))
